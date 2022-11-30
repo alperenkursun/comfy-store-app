@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <script
+      src="https://kit.fontawesome.com/a3e10ed635.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Products App - Product Details</title>
+  </head>
+  <body class="text-center" style="overflow-x: hidden">
+    <div id="sidebar">
+      <div>
+        <div id="top">
+          <div
+            style="display: flex; justify-content: space-between; flex: nowrap"
+          >
+            <div id="ac">
+              <span id="c">Your</span><span id="a" class="text-info"> Bag</span>
+            </div>
+            <i id="xmark" class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+
+        <div id="middl" class="w-100 m-0">
+          <div class="w-100 d-flex justify-content-between align-items-center">
+            <div class="d-flex m-3" style="height: 60px">
+              <img
+                src="bg.jpeg"
+                class="rounded p-1"
+                style="width: 100px; height: 60px"
+              />
+              <div class="m-1">
+                <div class="h6 pb-1">Utopia Sofa</div>
+                <p class="pb-1 m-0">$39.95</p>
+                <div
+                  class="text-muted d-flex align-items-start justify-content-start"
+                >
+                  remove
+                </div>
+              </div>
+            </div>
+
+            <div class="m-3">
+              <i class="fa-solid fa-caret-up fs-4" style="color: brown"></i>
+              <p class="m-0 text-center fs-4">0</p>
+              <i class="fa-solid fa-caret-down fs-4" style="color: brown"></i>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative bottom-0 start-50 translate-middle-x">
+          <div id="total" class="text-dark fs-3 my-2 text-center">
+            Total: $0.00
+          </div>
+          <div class="d-flex justify-content-center align-items-center my-3">
+            <button class="btn btn-danger">CHECKOUT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="middlecon" class="position-absolute d-none"></div>
+    <div
+      id="middle"
+      class="position-absolute top-50 start-50 translate-middle bg-white rounded bg-light d-none"
+    >
+      <div class="position-relative w-100 height-100 d-flex flex-column p-3">
+        <div class="position-absolute top-0 end-0 fs-1 p-3">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <a
+          id="products"
+          class="mx-5 position-relative text-decoration-none fs-3 p-3"
+          href="index.html"
+          ><i class="fa-solid fa-house me-3"></i>Home</a
+        >
+        <a
+          id="developers"
+          class="mx-5 position-relative text-decoration-none fs-3 p-3"
+          href="productdetails.html"
+          ><i class="fa-solid fa-couch me-3"></i>Products</a
+        >
+        <a
+          id="company"
+          class="mx-5 position-relative text-decoration-none fs-3 p-3"
+          href="about.html"
+          ><i class="fa-solid fa-book me-3"></i>About</a
+        >
+      </div>
+    </div>
+    <nav
+      class="position-relative top-0 start-50 translate-middle-x d-flex justify-content-between align-items-center p-4 w-100 opacity-100"
+    >
+      <div id="logo" class="text-white">
+        <i
+          id="menu"
+          class="fa-solid fa-cart-shopping position-relative fs-1 text-secondary"
+          ><span
+            id="red"
+            class="bg-danger rounded-circle p-2 position-absolute top-0 start-100 translate-middle fs-6 text-center text-white"
+            style="width: 34px !important; height: 32px !important"
+            >0</span
+          ></i
+        >
+      </div>
+      <div id="mid" class="h5 text-white d-flex">
+        <a
+          id="products"
+          class="mx-5 position-relative text-decoration-none"
+          href="index.html"
+          >Home</a
+        >
+        <a
+          id="developers"
+          onclick="allproducts()"
+          class="mx-5 position-relative text-decoration-none"
+          href="productdetails.html"
+          >Products</a
+        >
+        <a
+          id="company"
+          class="mx-5 position-relative text-decoration-none"
+          href="about.html"
+          >About</a
+        >
+      </div>
+
+      <button id="btn" class="btn btn-dark rounded-pill">Comfy</button>
+    </nav>
+    <div
+      class="bg-light"
+      style="width: 100%; height: 150px; position: relative"
+    >
+      <div
+        id="breadcrumb"
+        class="ms-5 text-secondary fs-1 d-flex justify-content-start align-items-center p-5 text-capitalize"
+      ></div>
+    </div>
+    <div class="container text-center mt-5 pb-5">
+      <a id="backhome" href="index.html" class="btn btn-primary">Back Home</a>
+      <div
+        id="mainn"
+        class="row mt-5 pt-5 d-flex justify-content-center text-center"
+      >
+        <img src="loading.gif" style="width: 241px; height: 161px" />
+      </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="pdscript.js"></script>
+  </body>
+</html>
